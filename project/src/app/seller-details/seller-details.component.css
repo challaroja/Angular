@@ -1,0 +1,33 @@
+.seller{
+    border: 1px solid grey;
+    margin-top: 10px;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px grey;
+
+    
+
+}
+.color{
+    color:rgb(218, 43, 43) ;
+    gap: 10px;
+    padding-right: 3px;
+}
+.roja{
+    display: flex;
+    flex-direction: row;
+    
+}
+li{
+    list-style-type: none;
+}
+.data{
+    color: grey;
+    margin-left: 30px;
+}
+.intro{
+    margin-left: 30px;
+}

@@ -1,0 +1,13 @@
+<div id="size-chart">
+    <h3>Size Chart</h3>
+    <div class="size">
+      <!-- Use *ngFor to loop through all sizes and bind click events -->
+      <span *ngFor="let size of sizes"
+            class="class"
+            [ngClass]="{ 'selected': selectedSize === size }"
+            (click)="selectSize(size)">
+        {{ size }}
+      </span>
+    </div>
+</div>
+  

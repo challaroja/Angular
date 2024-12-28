@@ -1,0 +1,46 @@
+* {
+    font-family: "Poppins", serif;
+  }
+  
+  .details {
+    border: 1px solid #aaaaaa; /* Updated to normal grey */
+    margin-top: 10px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 3px grey;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+   background-color: #fff;
+   
+  }
+  
+  .font {
+    font-size: large;
+    font-weight: 20px;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bb {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  
+  .aa {
+    list-style-type: none;
+    color: #aaaaaa; /* Updated to normal grey */
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #e93e93; /* Updated to normal grey */
+    margin: 0 5px 0;
+    padding: 10px;
+    padding-bottom: 5px;
+  }
+  

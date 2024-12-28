@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <article class="available">
+    <header>
+      <h2>Available Colours</h2>
+    </header>
+    <section class="container">
+      <div *ngFor="let color of colors"
+           class="color-item"
+           [ngClass]="{ 'selected': selectedColor === color.name }"
+           (click)="selectColor(color.name)">
+        <img [src]="color.image" [alt]="color.name" />
+        <footer>
+          <span class="color-name">{{ color.name }}</span>
+        </footer>
+      </div>
+    </section>
+  </article>
+  
+</body>
+</html>

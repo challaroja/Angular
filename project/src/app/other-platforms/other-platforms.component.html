@@ -1,0 +1,50 @@
+<div class="main">
+  <h2>Other Platforms</h2>
+  <!-- Popup Message at the top of the page -->
+  <div *ngIf="isPopupVisible" class="popup">
+    Added to Wishlist Successfully!
+  </div>
+
+  <div class="container">
+    <!-- Sidebar with details -->
+    <div class="aside">
+      <ul>
+        <li>Price</li>
+        <li>Platform</li>
+        <li>Rating</li>
+        <li>Positive</li>
+        <li>Negative</li>
+      </ul>
+    </div>
+
+    <!-- Middle content -->
+    <div class="middle">
+      <div class="image-wrapper">
+        <img src="/assets/11.jpg" alt="Product Image">
+      </div>
+      <p class="price">Rs 949</p>
+      <div class="rating">
+        <i class="fa-solid fa-star"></i> <span style="color: black;">4.5/5</span>
+      </div><br>
+      <div>Amazon</div><br>
+      <div class="verify">Verified Seller</div>
+      <p>Facing Delivery Issues</p>
+      <button (click)="addToWishlist()" onclick="alert('added successfully!')">Add to Wishlist</button>
+    </div>
+
+    <!-- Right-side content -->
+    <div class="last">
+      <div class="image-wrapper">
+        <img src="/assets/22.jpg" alt="Product Image">
+      </div>
+      <p class="price">Rs 949</p>
+      <div class="rating">
+        <i class="fa-solid fa-star"></i> <span style="color: black;">4.5/5</span>
+      </div><br>
+      <div>Flipkart</div><br>
+      <div class="verify">Verified Seller</div>
+      <p>Facing Delivery Issues</p>
+      <button (click)="addToWishlist()" onclick="alert('added successfully!')">Add to Wishlist</button>
+    </div>
+  </div>
+</div>

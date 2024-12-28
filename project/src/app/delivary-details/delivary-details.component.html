@@ -1,0 +1,67 @@
+<div class="delivery-details">
+    <h3>Delivery Details</h3>
+    <div class="data">
+      <div class="item">
+        <div class="left">
+          <img src="/assets/iconoir_delivery-truck (1).png" alt="Free Delivery" />
+        </div>
+        <div class="right">Free Delivery</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img src="/assets/iconoir_lot-of-cash (1).png" alt="Cash on Delivery" />
+        </div>
+        <div class="right">Cash on Delivery not available</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img src="/assets/tabler_arrows-exchange-2 (1).png" alt="Return & Exchange" />
+        </div>
+        <div class="kk">
+        <div class="right" >Return & Exchange available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Terms and Conditions -->
+  <div class="terms"  (click)="toggleTerms()">
+    <div class="style" >
+      <div >Terms & Conditions</div>
+      <div >
+        <i
+          class="fa-solid"
+          [class.fa-angle-down]="showTerms"
+          [class.fa-angle-right]="!showTerms"
+          style="color: red;"
+        
+        ></i>
+      </div>
+    </div>
+    <ul *ngIf="showTerms" class="details-list">
+      <li>All sales are final.</li>
+      <li>Warranty for defective products is valid for 30 days.</li>
+      <li>Offers are subject to change without notice.</li>
+    </ul>
+  </div>
+  
+  <!-- Return Policy -->
+  <div class="terms">
+    <div class="style" (click)="togglePolicy()">
+      <div>Return Policy</div>
+      <div>
+        <i
+          class="fa-solid"
+          [class.fa-angle-down]="showPolicy"
+          [class.fa-angle-right]="!showPolicy"
+          style="color: red;"
+        ></i>
+      </div>
+    </div>
+    <ul *ngIf="showPolicy" class="details-list">
+      <li>Products can be returned within 15 days.</li>
+      <li>Items must be unused and in original packaging.</li>
+      <li>Shipping charges are non-refundable.</li>
+    </ul>
+  </div>
+  

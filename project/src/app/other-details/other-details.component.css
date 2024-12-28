@@ -1,0 +1,29 @@
+.others{
+    max-width: 400px;
+    margin-top: 10px;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.infr{
+    list-style-type: none;
+    color: grey;
+    margin-left: 30px;
+}
+.date{
+    list-style-type: none;
+    margin-left: 50px;
+}
+.meet{
+    box-shadow: 3px 3px 3px grey;
+    border: 1px solid #aaaaaa; /* Updated to normal grey */
+    margin-top: 10px;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+   background-color: #fff;
+   
+
+}
